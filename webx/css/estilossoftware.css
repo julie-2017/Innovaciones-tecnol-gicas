@@ -1,0 +1,264 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Alata', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.padre-soft {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.margen-interno {
+  padding: 0 50px;
+}
+
+.cabecera-soft {
+  background: #E6E6E6;
+  display: flex;
+  flex-flow: column nowrap;
+  background-position: center;
+  background-attachment: contain;
+  background-size: cover;
+}
+
+.menu-soft {
+  background: rgba(0, 0, 0, .1);
+  display: flex;
+  flex-flow: column nowrap;
+  height: 60px;
+  align-items: center;
+  display: inline-block;
+  border-bottom: 1px solid rbga(255, 255, 255, .5);
+}
+
+.logo-soft {
+  flex: 1 1 auto;
+  height: 15px;
+}
+
+.nav-soft {
+  display: flex;
+  justify-content: flex-end;
+  flex: 5 1 auto;
+}
+
+.nav-soft a {
+  color: rgb(2, 2, 122);
+  font-size: 11px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  letter-spacing: 2px;
+  flex-direction: row;
+  float: right;
+  border-radius: 50px;
+  font-family: Verdana;
+}
+
+.nav-soft a:hover {
+  color: rgb(189, 161, 124);
+  background: rgb(2, 2, 122);
+}
+
+.texto-principal-soft {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  margin: 0 40px 0px 20px;
+}
+
+h1 {
+  font-family: Verdana;
+  font-size: 50px;
+  color: rgb(2, 2, 122);
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.section-soft {
+  background: #f7f7f7;
+  display: flex;
+  text-align: justify;
+}
+
+.articulos-soft {
+  background: #f7f7f7f7;
+  flex: 2 1 auto;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.article-soft {
+  flex: 1 1 auto;
+  color: #000;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin: 10px 10px 0 0;
+  flex: 1 1 45%;
+  background: #fff;
+  
+}
+.article-soft p{
+  font-family: Verdana;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+.article-soft img {
+  width: 400px;
+  height: 200px;
+  margin-top: 60px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #000;
+  font-size: 13px;
+  padding: 10px 0;
+}
+
+h4{
+  font-size: 16px;
+  padding: 10px 10px 10px 10px;
+  align-content: center;
+  color: #fff;
+}
+
+.aside-soft {
+  background: rgb(2, 2, 122);
+  flex: 1 1 auto;
+  margin: 10px 5px 10px 0;
+  margin-top: 10px;
+
+}
+
+.aside-soft p {
+  font-family: Verdana;
+}
+
+h3 {
+  background: rgb(189, 161, 124);
+  color: #fff;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.publicidad-soft {
+  background: rgba(0, 0, 0, .1);
+}
+
+.publicidad-soft p {
+  font-size: 13px;
+  color: #fff;
+  font-family: Verdana;
+  padding: 40px 40px 40px 40px;
+}
+.publicidad-soft p a{
+  color: rgb(189, 161, 124);
+}
+.publicidad-soft img{
+  width: 100%;
+  height: 180px;
+}
+
+.publicidad-soft h3 {
+  background: rgb(189, 161, 124);
+  color: #fff;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.navegacion-soft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2em;
+  width: 100%;
+  background: rgb(189, 161, 124);
+  margin: 0px 10px 0 10px;
+}
+
+.navegacion-soft a {
+  color: #fff;
+  font-size: 11px;
+  text-decoration: underline;
+  padding: 0 10px;
+  letter-spacing: 2px;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.footer-soft {
+  background: rgba(0, 0, 0, .1);
+  margin-top: 10px;
+}
+
+.pie-soft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 6em;
+  text-align: center;
+}
+
+.pie-soft p {
+  margin-bottom: 10px;
+  color: #000;
+  font-family: Verdana;
+}
+
+.pie-soft a {
+  color: #000;
+  font-size: 11px;
+  text-transform: uppercase;
+  padding: 0 10px;
+  letter-spacing: 2px;
+}
+
+@media all and (max-width: 1120px) {
+  .section-soft {
+    flex-direction: column;
+  }
+  .menu-soft {
+    flex-direction: column;
+    display: inline-block;
+    height: auto;
+  }
+  .aside-soft {
+    display: flex;
+    justify-content: center;
+  }
+  h1 {
+    font-size: 15px;
+  }
+  .texto-principal-soft {
+    height: 80px;
+  }
+}
+
+@media all and (max-width: 762px) {
+  .articulos-soft {
+    flex-direction: column;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .aside-soft {
+    display: flex;
+    flex-direction: column;
+  }
+}
